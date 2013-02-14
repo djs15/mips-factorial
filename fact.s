@@ -14,7 +14,7 @@ main:
 	
 	li $v0, 5
 	syscall
-	move $a0, $v0		#place number in $a0
+	move $a0, $v0		  #place number in $a0
 	addi $s4, $a0, 0
 
 FACT:	
@@ -26,7 +26,7 @@ FACT:
 	beq $t0, $0, L1 	  #if ($a0>=1) branch to L1
 	addi $v0, $0, 1
 	addi $sp, $sp, 8
-	jr $ra 			        #jumps to j L2 call in L1
+	jr $ra 			  #jumps to j L2 call in L1
 
 L1:
 	addi $a0, $a0, -1
